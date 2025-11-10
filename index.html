@@ -11,25 +11,25 @@
     <style>
         /* General Styling */
         :root {
-            --primary-color: #007bff; /* Royal Blue for headers/accents */
-            --secondary-color: #00e5ff; /* Cyan for sub-headers */
-            --text-color: #e0e0ff; /* Light blue-white for body text */
-            --bg-color: #0a0a1a; /* Dark Blue-Black */
-            --border-color: #004a99; /* Darker Blue */
-            --zsh-user-color: #57c7ff; /* Light Blue for zsh user */
+            --primary-color: #007bff;
+            --secondary-color: #00e5ff;
+            --text-color: #e0e0ff;
+            --bg-color: #0a0a1a;
+            --border-color: #004a99;
+            --zsh-user-color: #57c7ff;
         }
 
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Prevents scrolling on desktop */
+            overflow: hidden;
         }
 
         body {
             background-color: var(--bg-color);
-            color: var(--text-color); /* Use high-contrast text color */
-            font-family: 'IBM Plex Mono', monospace; /* More readable font */
+            color: var(--text-color);
+            font-family: 'IBM Plex Mono', monospace;
             font-size: 16px;
             display: flex;
             align-items: center;
@@ -52,7 +52,6 @@
         .panel::-webkit-scrollbar-thumb:hover {
             background-color: var(--primary-color);
         }
-
 
         /* CRT Effect Container */
         .crt-container {
@@ -102,7 +101,7 @@
             display: flex;
             gap: 2rem;
             width: 100%;
-            height: calc(100% - 40px); /* Adjust for header */
+            height: calc(100% - 40px);
         }
 
         /* Header Section */
@@ -116,7 +115,7 @@
 
         .header h1 {
             margin: 0;
-            font-family: 'VT323', monospace; /* Keep retro font for main header */
+            font-family: 'VT323', monospace;
             font-size: 2.5rem;
             color: var(--primary-color);
             text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
@@ -129,7 +128,6 @@
           25% { opacity:0.3; } 30% { opacity:1; } 70% { opacity:0.7; }
           72% { opacity:0.2; } 77% { opacity:.9; } 100% { opacity:.9; }
         }
-
 
         /* All three main sections */
         .panel {
@@ -177,7 +175,7 @@
         ul li strong { 
             font-size: 1.1rem;
             font-weight: 500;
-            color: var(--secondary-color); /* Use cyan for sub-headings */
+            color: var(--secondary-color);
         }
         p { margin: 0.5rem 0 0 0; line-height: 1.5; }
 
@@ -231,17 +229,17 @@
         @media (max-width: 1024px) {
             html, body {
                 height: auto;
-                overflow: auto; /* Allow natural document scrolling */
+                overflow: auto;
             }
             body {
                 font-size: 16px;
-                padding: 0; /* Remove body padding */
-                display: block; /* Revert to block for scrolling */
+                padding: 0;
+                display: block;
                 text-shadow: none;
             }
             .crt-container {
                 height: auto;
-                min-height: 100vh; /* Fill screen but allow growing */
+                min-height: 100vh;
                 padding: 1.5rem 1rem;
                 border-radius: 0;
                 border: none;
@@ -278,37 +276,35 @@
         </header>
 
         <div class="content-wrapper">
-            <!-- Left Section: Experience & Skills -->
+            <!-- Left Section: Experience & Education -->
             <section id="left-panel" class="panel">
                 <h2 data-text="> Experience"></h2>
                 <ul>
                     <li>
-                        <strong>AI/ML Lead - Modern Intelligent Solutions (05/2024-Present)</strong>
-                        <p>Led Agentic AI development. Built a complex RAG system for querying thousands of documents, SQL data agents, and a recommendation engine pipeline. Developed high-performance FinTech solutions using Golang.</p>
+                        <strong>Tech Lead - Fira AI (06/2024-Present)</strong>
+                        <p>Leading AI/ML initiatives focusing on large-scale conversational AI, generative AI products, and enterprise chatbot deployments. Spearheaded team delivering LLM-powered solutions with measurable business outcomes. Responsible for system design, building scalable backends with GO and Python, and integrating AI into production-grade applications.</p>
                     </li>
                     <li>
-                        <strong>AI Engineer - Voilabs France (11/2023-03/2024)</strong>
-                        <p>Engineered performant Next.js applications with integrated ML models for enhanced user personalization, boosting retention by 15%. Trained and fine-tuned transformer models for advanced text classification, improving model accuracy by 18%.</p>
+                        <strong>Software Engineer - Voilabs (10/2023-04/2024)</strong>
+                        <p>Contributed to AI-driven web applications using Next.js and backend services to integrate ML models for real-time personalization. Developed, fine-tuned, and deployed transformer-based NLP models to production pipelines, improving model accuracy by 18%.</p>
                     </li>
                 </ul>
-                <h2 data-text="> Skills"></h2>
-                <div class="skills-grid">
-                    <div class="skill-item"><strong>Python</strong></div>
-                    <div class="skill-item"><strong>Golang</strong></div>
-                    <div class="skill-item"><strong>ReactJS</strong></div>
-                    <div class="skill-item"><strong>Next.js</strong></div>
-                    <div class="skill-item"><strong>Node.js</strong></div>
-                    <div class="skill-item"><strong>AI Agents</strong></div>
-                    <div class="skill-item"><strong>LangChain</strong></div>
-                    <div class="skill-item"><strong>LangGraph</strong></div>
-                    <div class="skill-item"><strong>LlamaIndex</strong></div>
-                    <div class="skill-item"><strong>PyTorch</strong></div>
-                    <div class="skill-item"><strong>PostgreSQL</strong></div>
-                    <div class="skill-item"><strong>Docker</strong></div>
-                    <div class="skill-item"><strong>AWS</strong></div>
-                    <div class="skill-item"><strong>Linux</strong></div>
-                    <div class="skill-item"><strong>Nvim</strong></div>
-                </div>
+                
+                <h2 data-text="> Education"></h2>
+                <ul>
+                    <li>
+                        <strong>Bs (Hons) Software Engineering</strong>
+                        <p>Bahria University Islamabad (09/2016-07/2020)</p>
+                    </li>
+                </ul>
+
+                <h2 data-text="> Volunteer"></h2>
+                <ul>
+                    <li>
+                        <strong>Hackathon Mentor & Judge - Lablab.ai</strong>
+                        <p>Mentored international teams during AI hackathons with sponsors like Stability AI and OpenAI. Guided teams in project planning, model integration, and product deployment.</p>
+                    </li>
+                </ul>
             </section>
 
             <!-- Center Section: Social Links -->
@@ -318,50 +314,55 @@
                 </div>
                 <div class="social-links">
                     <a href="https://github.com/umar052001" target="_blank" class="button">> GITHUB</a>
-                    <a href="https://linkedin.com/in/muhammad-umar-nawaz-99a702233" target="_blank" class="button">> LINKEDIN</a>
+                    <a href="https://www.linkedin.com/in/muhammad-umar-nawaz-99a702233/" target="_blank" class="button">> LINKEDIN</a>
+                    <a href="https://janjua.dev" target="_blank" class="button">> PORTFOLIO SITE</a>
                     <a href="Resume-Umar (1).pdf" download="Resume-Umar-Nawaz-Janjua.pdf" class="button">> DOWNLOAD RESUME.PDF</a>
                 </div>
             </section>
 
-            <!-- Right Section: Projects -->
+            <!-- Right Section: Skills, Certifications & Achievements -->
             <section id="right-panel" class="panel">
-                <h2 data-text="> Projects"></h2>
-                <ul>
-                    <li>
-                        <strong>MedAltrix</strong>
-                        <p>AI-powered mental wellness app using Next.js, Stable Diffusion, GPT-3.5, and Eleven Labs for personalized meditation experiences.</p>
-                    </li>
-                    <li>
-                        <strong>CourseGen</strong>
-                        <p>AI-powered educational platform using Next.js, LLMs, LangChain, and vector databases to generate personalized courses.</p>
-                    </li>
-                     <li>
-                        <strong>Portfolio Terminal (This Site)</strong>
-                        <p>A retro-themed portfolio built with vanilla JS. Features a responsive CRT aesthetic, custom theme, and dynamic text animations.</p>
-                    </li>
-                </ul>
-                
-                <h2 data-text="> Achievements"></h2>
-                <ul>
-                    <li>
-                        <strong>Runner-up, Stable Code Hackathon</strong>
-                        <p>A 24-hour hackathon hosted by Stability.ai & lablab.ai.</p>
-                    </li>
-                </ul>
+                <h2 data-text="> Skills"></h2>
+                <div class="skills-grid">
+                    <div class="skill-item"><strong>Python</strong></div>
+                    <div class="skill-item"><strong>Golang</strong></div>
+                    <div class="skill-item"><strong>Rust</strong></div>
+                    <div class="skill-item"><strong>JavaScript</strong></div>
+                    <div class="skill-item"><strong>Node.js</strong></div>
+                    <div class="skill-item"><strong>FastAPI</strong></div>
+                    <div class="skill-item"><strong>LLMs</strong></div>
+                    <div class="skill-item"><strong>LangChain</strong></div>
+                    <div class="skill-item"><strong>LangGraph</strong></div>
+                    <div class="skill-item"><strong>LlamaIndex</strong></div>
+                    <div class="skill-item"><strong>TensorFlow</strong></div>
+                    <div class="skill-item"><strong>Sklearn</strong></div>
+                    <div class="skill-item"><strong>AWS</strong></div>
+                    <div class="skill-item"><strong>GCP</strong></div>
+                    <div class="skill-item"><strong>Docker</strong></div>
+                    <div class="skill-item"><strong>Linux</strong></div>
+                </div>
 
                 <h2 data-text="> Certifications"></h2>
                 <ul>
                     <li>
                         <strong>Machine Learning Specialization</strong>
-                        <p>Stanford Online & DeepLearning.ai</p>
+                        <p>DeepLearning.AI & Stanford Online</p>
                     </li>
                     <li>
-                        <strong>Frontend Developer Specialization</strong>
+                        <strong>Meta Front-End Developer</strong>
                         <p>Meta</p>
                     </li>
                     <li>
-                        <strong>Mathematics for ML & DS</strong>
+                        <strong>Mathematics for ML & DataScience</strong>
                         <p>DeepLearning.ai</p>
+                    </li>
+                </ul>
+
+                <h2 data-text="> Awards"></h2>
+                <ul>
+                    <li>
+                        <strong>Runner-up, StableCode 24-hour Hackathon</strong>
+                        <p>Hosted by Stability.ai & Lablab.ai (September 2023)</p>
                     </li>
                 </ul>
             </section>
@@ -420,4 +421,3 @@
 
 </body>
 </html>
-
