@@ -319,7 +319,7 @@
                     </div>
                 </div>
                 <div class="action-bar">
-                    <button class="toggle-btn" onclick="toggleDetails('proj-verifier')">[ VIEW ARCHITECTURE ]</button>
+                    <button class="toggle-btn" onclick="toggleDetails('proj-verifier')">[ VIEW DETAILS ]</button>
                 </div>
                 <div class="project-details">
                     <div class="detail-block">
@@ -348,7 +348,7 @@
                     </div>
                 </div>
                 <div class="action-bar">
-                    <button class="toggle-btn" onclick="toggleDetails('proj-mandumah')">[ VIEW ARCHITECTURE ]</button>
+                    <button class="toggle-btn" onclick="toggleDetails('proj-mandumah')">[ VIEW DETAILS ]</button>
                 </div>
                 <div class="project-details">
                     <div class="detail-block">
@@ -377,7 +377,7 @@
                     </div>
                 </div>
                 <div class="action-bar">
-                    <button class="toggle-btn" onclick="toggleDetails('proj-imagini')">[ VIEW ARCHITECTURE ]</button>
+                    <button class="toggle-btn" onclick="toggleDetails('proj-imagini')">[ VIEW DETAILS ]</button>
                 </div>
                 <div class="project-details">
                     <div class="detail-block">
@@ -389,7 +389,7 @@
                         <p class="detail-text">
                             - Implemented a fraud-resistant credit consumption system.<br>
                             - Background workers (Celery) handle continuous data enrichment.<br>
-                            - Tiered data architecture: Verified vs. Unverified lead storage.
+                            - Tiered data DETAILS: Verified vs. Unverified lead storage.
                         </p>
                     </div>
                 </div>
@@ -406,7 +406,7 @@
                     </div>
                 </div>
                 <div class="action-bar">
-                    <button class="toggle-btn" onclick="toggleDetails('proj-outreach')">[ VIEW ARCHITECTURE ]</button>
+                    <button class="toggle-btn" onclick="toggleDetails('proj-outreach')">[ VIEW DETAILS ]</button>
                 </div>
                 <div class="project-details">
                     <div class="detail-block">
@@ -427,7 +427,7 @@
                     </div>
                 </div>
                 <div class="action-bar">
-                    <button class="toggle-btn" onclick="toggleDetails('proj-swcc')">[ VIEW ARCHITECTURE ]</button>
+                    <button class="toggle-btn" onclick="toggleDetails('proj-swcc')">[ VIEW DETAILS ]</button>
                 </div>
                 <div class="project-details">
                     <div class="detail-block">
@@ -528,12 +528,12 @@
             
             if (details.style.display === 'block') {
                 details.style.display = 'none';
-                btn.innerHTML = '[ VIEW ARCHITECTURE ]';
+                btn.innerHTML = '[ VIEW DETAILS ]';
                 btn.style.background = 'transparent';
                 btn.style.color = 'var(--secondary-color)';
             } else {
                 details.style.display = 'block';
-                btn.innerHTML = '[ HIDE ARCHITECTURE ]';
+                btn.innerHTML = '[ HIDE DETAILS ]';
                 btn.style.background = 'var(--secondary-color)';
                 btn.style.color = '#000';
             }
